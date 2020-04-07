@@ -4,6 +4,7 @@
 let showMode = 3; // 0: show all, 1:show previous best, 2: show best of each species, 3:show 20% of the population
 let genLifespan = 0; //how long the current generation have lived, used for the lazer position
 let deathLazerSpeed = 8;
+let deathLazerDelay = 10;
 
 
 //some storage to keep track of the lazer position when switching modes (i.e. gen replay and species replay)
@@ -188,7 +189,7 @@ function drawLazer() {
 
 
     //get the position of the lazer
-    let pos = worldCoordsToPixelCoords(-10 + deathLazerSpeed * genLifespan / 100.0, 0);
+    let pos = worldCoordsToPixelCoords(-1 * deathLazerDelay + deathLazerSpeed * genLifespan / 100.0, 0);
     pos.mult(playerScaleAmount);
 
     //draw lines making the lazer

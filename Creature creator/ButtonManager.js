@@ -260,6 +260,9 @@ class ButtonManager {
         //Death Lazer Speed Value Button
         this.learningButtons.push(generateDeathLazerSpeedValueButton(toggleButtonsStartingX, toggleButtonsStartingY + toggleButtonNo * (toggleButtonHeight + toggleButtonGap), toggleButtonWidth - 2 * toggleButtonHeight, toggleButtonHeight));
         toggleButtonNo++;
+        //Death Lazer Delay Value Button
+        this.learningButtons.push(generateDeathLazerDelayValueButton(toggleButtonsStartingX, toggleButtonsStartingY + toggleButtonNo * (toggleButtonHeight + toggleButtonGap), toggleButtonWidth - 2 * toggleButtonHeight, toggleButtonHeight));
+        toggleButtonNo++;
         //Simulation speed value button
         this.learningButtons.push(generateSimulationSpeedValueButton(toggleButtonsStartingX, toggleButtonsStartingY + toggleButtonNo * (toggleButtonHeight + toggleButtonGap), toggleButtonWidth - 2 * toggleButtonHeight, toggleButtonHeight));
         toggleButtonNo++;

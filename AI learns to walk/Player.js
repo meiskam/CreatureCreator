@@ -280,7 +280,7 @@ class Player {
         }
 
         //check if the player is hit by the lazer
-        let lazerX = (-10 + deathLazerSpeed * this.lifespan / 100.0) * SCALE;
+        let lazerX = (-1 * deathLazerDelay + deathLazerSpeed * this.lifespan / 100.0) * SCALE;
         let hitByLazer = false;
         for (let b of this.bodies) {
             for (let f of b.fixtures) {
